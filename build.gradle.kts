@@ -83,8 +83,8 @@ tasks.withType(ShadowJar::class.java) {
     relocate("com.google.gson", "io.fairyproject.libs.gson")
     relocate("com.github.retrooper.packetevents", "io.fairyproject.libs.packetevents")
     relocate("io.github.retrooper.packetevents", "io.fairyproject.libs.packetevents")
+    relocate("de.tr7zw.changeme.nbtapi", "io.fairyproject.libs.nbtapi")
     relocate("io.fairyproject.bootstrap", "io.fairyproject.library.bootstrap")
-    relocate("de.tr7zw.changeme.nbtapi", "io.faryprojects.libs.nbtapi")
 
     archiveFileName.set("fairy-lib-plugin.jar")
 }
