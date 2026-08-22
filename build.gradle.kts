@@ -16,11 +16,17 @@ plugins {
     id("org.jetbrains.kotlin.jvm") version "1.9.23" apply false
 
     //Shadow plugin, provides the ability to shade fairy and other dependencies to compiled jar
-    id("com.github.johnrengelman.shadow") version "7.1.2"
+    id("com.gradleup.shadow") version "8.3.11"
 }
 
 group = properties("group")
 version = properties("version")
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(25))
+    }
+}
 
 // Fairy configuration
 fairy {
